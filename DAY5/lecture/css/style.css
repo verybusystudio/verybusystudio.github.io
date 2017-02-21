@@ -1,0 +1,27 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/leading-24px.png");
+    margin-top: 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    font-weight: bold;
+}
+h2{
+    border:2px solid black;
+    border-radius:0;
+    color:white;
+    background-color: black;
+}
+.intro dl p{
+
+}
