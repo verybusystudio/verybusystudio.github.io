@@ -1,0 +1,63 @@
+body {
+    margin:0;
+}
+.wrapper {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block-box,
+.inline-box {
+    /*width, height 속성은 inline 요소에는 적용되지 않는다.*/
+    width:200px;
+    height: 200px;
+    /*padding-top, padding-bottom은 inline 요소에는 적용되지 않는다. (간격이 벌어지지 않는다)*/
+    padding: 20px;
+    /*border-top, border-bottom은 inline 요소에는 적용되지 않는다. (간격이 벌어지지 않는다)*/
+    border: 10px solid red;
+    /*margin-top, margin-bottom은 inline 요소에는 적용되지 않는다. (간격이 벌어지지 않는다)*/
+    margin:20px;
+    background: #000;
+    color:#fff;
+}
+hr{
+    margin:20px 0;
+    border:0;
+    border-bottom: 1px solid #c2d6d1;
+}
+
+.inline-block-box {
+    /*화면 표시 방법 : inline-block 변경*/
+    /*기본적으로는 inline 처럼 보이지만, block 처럼 레이아웃 설정이 가능하다. 상/하 공간 설정 가능. width/height 설정 가능*/
+    display:inline-block;
+    background: #d222df;
+    color: #fde234;
+}
+.ghost-style-link {
+    dispaly :inline-block;
+    margin:20px;
+    border: 5px solid currentColor;
+    padding:0.9375em 1.25em 0.625em;
+    font-size: 1rem;
+    font-weight:500;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#bfdf2e;
+    transition : all 0.4s ease;
+}
+.ghost-style-link:hover {
+    color:#fff;
+    background: #bfdf2e;
+}
+.album-image {
+    /*width:100%;*/
+    /*이렇게 써야지 이미지가 비율에 맞게 커진다*/
+    /*height:auto;*/
+    margin:30px 0;
+    border: 8px solid #39fd23;
+    padding 20px;
+    background: #fff;
+
+}
