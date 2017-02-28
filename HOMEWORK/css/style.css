@@ -1,0 +1,34 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/leading-24px.png");
+    margin-top: 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    font-size: 3rem;
+}
+.container dl dd{
+    margin-left: 10px;
+}
+.container dl dt{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.container dl dd p{
+    margin-bottom: 2.4rem;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+}
+.container dt{
+    margin-top: 1.0rem;
+}
+
