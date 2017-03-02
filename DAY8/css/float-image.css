@@ -1,0 +1,11 @@
+.container{
+    width:800px;
+    margin:0 auto;
+}
+.article{
+    font-size: 17px;
+}
+.article-dummy{
+    float:left;
+    font-size: 20px;
+}

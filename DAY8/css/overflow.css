@@ -1,0 +1,28 @@
+html{
+    /*옛날 웹은 스크롤이 무조건적으로 있고 그 크기는 가로 24px;*/
+    /*new web 창이 작으면 스크롤이 안보이는데 축이 움직인다*/
+    overflow-y: scroll;
+}
+.demo {
+    width:500px;
+    height:340px;
+    margin: 3em auto;
+    border: 5px solid #ddd;
+    padding:1em;
+}
+
+.o-hidden{
+    overflow: hidden;
+}
+.o-auto{
+    overflow: auto;
+}
+.o-scroll{
+    overflow: scroll;
+    /*overflow-x: scroll;*/
+    /*overflow-y: scroll;*/
+}
+
+.o-visible{
+    overflow: visible;
+}

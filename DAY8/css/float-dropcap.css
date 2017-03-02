@@ -1,0 +1,24 @@
+.dropcap{
+    margin:100px auto;
+    width:50%
+    line-height: 1.5;
+}
+.dropcap .dropcap__first-child{
+    color: blue;
+    font-size: 80px;
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+    line-height: 1;
+}
+.dropcap span{
+    color: lightblue;
+}
+.dropcap::first-letter {
+    color: red;
+    font-size: 80px;
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+    line-height: 1;
+}
