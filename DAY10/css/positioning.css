@@ -1,0 +1,88 @@
+/*positioning.css*/
+body{
+    margin: 0;
+}
+.box{
+    width: 200px;
+    height: 180px;
+    color: #fff;
+    text-align: center;
+    line-height: 180px;
+}
+.parent-box{
+    box-sizing: border-box;
+    margin: 0;
+    height:100vh;
+    border:10px solid #aeaeae;
+    /*부모가 기준*/
+    position:relative;
+}
+.box:nth-child(1){
+    background: red;
+    }
+.box:nth-child(2){
+    background: green;
+    }
+.box:nth-child(3){
+    background: blue;
+    /*레이어 순서 병경하는 방법*/
+    z-index:1;
+    }
+.box:nth-child(4){
+    background: yellow;
+    }
+.target{
+    /*컨텐츠 기준*/
+    /*position:relative;*/
+    /*화면 기준*/
+    /*position: absolute;*/
+    /*right:-200px;*/
+    /*bottom:-180px;*/
+}
+.vertex-lt{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.vertex-rt{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.vertex-lb{
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+.vertex-rb{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+.parent-center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top: -90px;
+    margin-left: -100px;
+}
+.center-box1{
+    position:absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
+.center-box2{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.center-box3{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
