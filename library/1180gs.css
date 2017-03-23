@@ -1,0 +1,58 @@
+/*page-width : 1180px
+colum-width : 60px
+gutter-direction : after(margin-right) need (.last, .omega)
+gutter-width:20px
+before | after | split |  inside*/
+
+/*.container*/
+/*.row, clearfix*/
+/*.col-1~15*/
+/*.push-1~15*/
+/*.pre-1~15*/
+/*.post-1~15*/
+/*.last, .omega*/
+
+.show-grid{
+    background: linear-gradient(transparent 23px,#170ca7 23px);
+    background-size: 1px 24px;
+}
+.show-grid .container {
+    position: relative;
+}
+.show-grid .container::before {
+    content: '';
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200vh;
+    background:linear-gradient(90deg,  hsla(00, 90%, 90%, 0.5) 1px, hsla(00, 90%, 90%, 0.5)135px, transparent 135px, transparent 270px) ;     
+    background-size: 270px 1px;
+    height: 200vh;
+    }
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width:1080px;
+}
+.row::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+}
+.col-1, .col-2, .col-3, .col-4,
+.col-5, .col-6, .col-7, .col-8{
+    float:left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.col-1{width:135px;}
+.col-2{width:270px;}
+.col-3{width:405px;}
+.col-4{width:540px;}
+.col-5{width:875px;}
+.col-6{width:1010px;}
+.col-7{width:1145px;}
+.col-8{width:1280px;}

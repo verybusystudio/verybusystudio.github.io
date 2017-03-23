@@ -92,6 +92,21 @@ body{
 .col-11{width:860px;}
 .col-12{width:940px;}
 
+/*push module*/
+.push-1  { margin-left: 90px;  }
+.push-2  { margin-left: 170px; }
+.push-3  { margin-left: 250px; }
+.push-4  { margin-left: 330px; }
+.push-5  { margin-left: 410px; }
+.push-6  { margin-left: 490px; }
+.push-7  { margin-left: 570px; }
+.push-8  { margin-left: 650px; }
+.push-9  { margin-left: 730px; }
+.push-10 { margin-left: 810px; }
+.push-11 { margin-left: 890px; }
+.push-12 { margin-left: 970px; }
+
+
 /*pre post module*/
 .pre-1, .pre-2, .pre-3, .pre-4, .pre-5, .pre-6,
 .pre-7, .pre-8, .pre-9, .pre-10, .pre-11, .pre-12,

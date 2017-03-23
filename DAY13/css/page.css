@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+html {
+  overflow-y: visible;
+  min-height: 200vh;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+/**
+ * --------------------------------
+ * page-header
+ * black
+ * 24px * 5 = 120px
+ * ----------------------------- */
+.page-header {
+  min-height: 120px;
+  background: black;
+}
+
+.page-header .mall {
+  margin-top: 43px;
+  font-size: 53px;
+  line-height: 53px;
+}
+
+.mall a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.gnb {
+    margin-top: 48px;
+    position:relative;
+    left: 40px;
+}
+.gnb li{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    float:left;
+    margin-right: 50px;
+}
+.gnb a{
+    font-size:20px;
+    text-decoration:none;
+    color:white;
+}
