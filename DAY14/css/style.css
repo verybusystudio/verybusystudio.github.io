@@ -1,0 +1,102 @@
+html{
+    font-family: 'Montserrat', 'Spoqa Han Sans', sans-serif;
+}
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip:     rect(0 0 0 0); /* IE 6,7 */
+  clip:     rect(0,0,0,0);
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.a11y-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
+}
+caption.a11y-hidden { position: static; }
+
+
+.brand{
+    margin-top: 20px;
+}
+.login{
+    margin-top: 36px;
+    margin-left: 40px;
+}
+.login a {
+    border:1px solid transparent;
+    border-radius: 3px;
+    padding: 0.5571em 0.7142em 0.3571em;
+    color: gray;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .3s ease;
+    font-size: 10px;
+}
+.login a:hover,
+.login a:focus{
+    border-color:gray;
+}
+.login a:focus{
+    outline: none;
+}
+.login__link-join{
+    margin-left: 2px;
+}
+.login__link-login{
+    margin-left: 18px;
+}
+.search-bar{
+    margin-top: 29px;
+    margin-left: 10px;
+}
+#search{
+    width: 330px;
+    border:4px solid black;
+    padding:0.9285em;
+}
+.gnb{
+    margin-top: 50px;
+}
+.gnb ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.gnb li{
+    float:left;
+    margin-right: 40px;
+}
+.gnb a{
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    padding:0.3571em;
+    color:black;
+    font-size: 25px;
+    transition:all .15s linear;
+}
+.gnb a:hover,
+.gnb a:focus{
+    border-bottom-color: orange;
+    color:orange
+}
+.gnb a:active{
+    border-bottom: 4px solid orange;
+    padding:0.3571em;
+    border-radius:10px;
+    background: orange;
+    color:white;
+}
+.banner{
+    margin-top: 30px;
+    float:left;
+    }
