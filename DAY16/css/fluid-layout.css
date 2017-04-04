@@ -1,0 +1,62 @@
+/* .container */
+.container{
+    /*width: 100%;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* .columns >> 행, row로 써도 무관함 */
+.columns::after{
+
+    content:'';
+    display: block;
+    clear: both;
+}
+/*여기서 준 속성을*/
+.columns{
+    box-sizing: border-box;
+}
+/* .column */
+.column{
+    float: left;
+    /*gutter 역할을 대신함*/
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: inherit; /*상속(inheritance)*/
+    /*여기서 적용하는 것*/
+}
+/*부분 제어 적용한 항목만 제어*/
+.no-gutter .column,
+/*전체 제어, 부모 속성도 적용*/
+.column.no-gutter{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* .is-*, 1-12 */
+.is-1 {width:8.3333%}
+.is-2 {width:16.6666%}
+.is-3 {width:25%}
+.is-4 {width:33.3333%}
+.is-5 {width:41.6666%}
+.is-6 {width:50%}
+.is-7 {width:58.3333%}
+.is-8 {width:66.6666%}
+.is-9 {width:75%}
+.is-10 {width:83.3333%}
+.is-11 {width:91.6666%}
+.is-12 {width:100%}
+
+/*is-offset-*, 1-12*/
+.is-offset1 {margin-left:8.3333%}
+.is-offset2 {margin-left:16.6666%}
+.is-offset3 {margin-left:25%}
+.is-offset4 {margin-left:33.3333%}
+.is-offset5 {margin-left:41.6666%}
+.is-offset6 {margin-left:50%}
+.is-offset7 {margin-left:58.3333%}
+.is-offset8 {margin-left:66.6666%}
+.is-offset9 {margin-left:75%}
+.is-offset10 {margin-left:83.3333%}
+.is-offset11 {margin-left:91.6666%}
+.is-offset12 {margin-left:100%}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+
+
+<style>
+    .container{
+        width:100%;
+        height:100%;
+        text-align:center;
+        font-family: 'Roboto', sans-serif;
+        }
+    .top-menu{
+        width:100%;
+        height:45px;
+        border:0.1px solid lightgray;
+        border-radius:50px;
+        margin-bottom:11px;
+        }
+    .top-menu button{
+        line-height:45px;
+        width:20%;
+        height:45px;
+        font-size:12px;
+        font-weight:200;
+        background:none;
+        color: gray;
+        float:left;
+        }
+    .menulist1:hover,
+    .menulist2:hover,
+    .menulist3:hover,
+    .menulist4:hover,
+    .menulist5:hover{
+        font-size:15px;
+        line-height:42px;
+        font-weight:bold;
+        color: white;
+        border:1px solid transparent;
+        border-radius:50px;
+        }
+    .menulist1:focus,
+    .menulist2:focus,
+    .menulist3:focus,
+    .menulist4:focus,
+    .menulist5:focus{
+        font-size:15px;
+        line-height:42px;
+        font-weight:bold;
+        color: white;
+        border:1px solid transparent;
+        border-radius:50px;
+        }
+        .menulist1:hover,
+        .menulist1:focus{
+        background:black;
+        }
+        .menulist2:hover,
+        .menulist2:focus{
+        background:#FFE200;
+        }
+        .menulist3:hover,
+        .menulist3:focus{
+        background:#E60012;
+        }
+        .menulist4:hover,
+        .menulist4:focus{
+        background:#302B8C;
+        }
+        .menulist5:hover,
+        .menulist5:focus{
+        background:#00A050;
+        }
+    .Main li img,
+    .SNS li img{
+        width:100%;
+        float:left;
+        }
+    .Brands li img,
+    .DJ li img{
+        width:50%;
+        float:left;
+        }
+    .Magazine li img{
+        width:32%;
+        margin-right:3px;
+        margin-bottom:3px;
+        float:left;
+        }
+    
+</style>    
+ 
+</head>
+<body>
+
+<!--container-->
+<div class="container">
+    
+<!--top-->
+<div class="top-menu">
+  <button class="menulist1" onclick="openMenu('Main')" >Main</button>
+  <button class="menulist2" onclick="openMenu('Brands')">Brands</button>
+  <button class="menulist3" onclick="openMenu('Magazines')">Magazines</button>
+  <button class="menulist4" onclick="openMenu('SNS')">SNS</button>
+  <button class="menulist5" onclick="openMenu('DJ')">DJ</button>
+</div>
+
+    
+<!--Main-->
+<div id="Main" class="menu" style="display:block">
+<ul module="bannermanage2_mdisplay_13" class="Main"> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+</ul>
+</div>
+
+<!--Brands-->
+<div id="Brands" class=" menu" style="display:none">
+<ul module="bannermanage2_mdisplay_14" class="Brands"> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+</ul>
+</div>
+    
+<!--Magazines-->
+<div id="Magazines" class="menu" style="display:none">
+<ul module="bannermanage2_mdisplay_15" class="Magazine"> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+</ul>
+</div>
+    
+<!--SNS-->
+<div id="SNS" class="menu" style="display:none">
+<ul module="bannermanage2_mdisplay_16" class="SNS"> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+</ul>
+</div>
+    
+<!--DJ-->
+<div id="DJ" class="menu" style="display:none">
+<ul module="bannermanage2_mdisplay_17" class="DJ"> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+    <li><a href="{$href}" {$target} >{$banner}</a></li> 
+</ul>
+</div>
+    
+
+<script>
+function openMenu(menuName) {
+    var i;
+    var x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(menuName).style.display = "block";  
+}
+    
+</script>
+</div>
+
+</body>
+</html>

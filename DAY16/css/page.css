@@ -1,0 +1,42 @@
+
+        .page{
+            max-width: 1280px;
+            margin-top: 30px;
+        }
+        .content-image{
+            margin-top: 40px;
+        }
+
+        .puppy{
+            padding-bottom: 40%;
+            background-image: url("https://source.unsplash.com/category/nature") ;
+        }
+        .center-pos-woman{
+            background-image: url("../images/john-towner.jpg");
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        .page-wrapper{
+            width: 100vh;
+            min-height: 200vh;
+            padding-top: 40px;
+            background: #fff;
+        }
+        .page-header-headline{
+            margin-top: 170px;
+        }
+        .slogan{
+            font-size: 0.9rem;
+        }
+        .page-header-headline,
+        .slogan{
+            color: #fff;
+            text-shadow: 0 1px 10px #363732;
+        }
